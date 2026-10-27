@@ -1,6 +1,8 @@
 "use client";
 
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import MineralViewer3D from "@/components/csml/MineralViewer3D";
 import {
   Atom,
   BatteryCharging,
@@ -66,6 +68,7 @@ const fallbackTones: Record<Mineral["symbol"], string> = {
 };
 
 export default function MineralsCatalog() {
+  const reduceMotion = useReducedMotion();
   const [view, setView] = useState<MaterialView>("list");
   const [selectedSymbol, setSelectedSymbol] = useState<Mineral["symbol"] | null>(null);
   const [brokenImages, setBrokenImages] = useState<Partial<Record<Mineral["symbol"], boolean>>>({});
@@ -148,7 +151,19 @@ export default function MineralsCatalog() {
         </div>
       </div>
 
-      {selected ? <MineralDetail mineral={selected} index={selectedIndex} /> : null}
+      <AnimatePresence mode="wait">
+        {selected ? (
+          <motion.div
+            key={selected.symbol}
+            initial={reduceMotion ? false : { opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
+            transition={{ duration: 0.35 }}
+          >
+            <MineralDetail mineral={selected} index={selectedIndex} />
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
 
       {view === "list" ? (
         <div className="minerals-list">
@@ -156,10 +171,14 @@ export default function MineralsCatalog() {
             const Icon = mineralIcons[item.symbol] ?? Atom;
             const isSelected = item.symbol === selectedSymbol;
             return (
-              <article
+              <motion.article
                 className={`mineral-list-row${isSelected ? " is-selected" : ""}`}
                 key={item.symbol}
                 id={`mineral-${item.symbol}`}
+                initial={reduceMotion ? false : { opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, amount: 0.15 }}
+                transition={{ duration: 0.4, delay: Math.min(index * 0.03, 0.24) }}
               >
                 <span className="row-index"> {String(index + 1).padStart(2, "0")} </span>
                 <span className="row-symbol">{item.symbol}</span>
@@ -174,16 +193,22 @@ export default function MineralsCatalog() {
                   aria-label={`Open ${item.name} details`}
                   onClick={() => setSelectedSymbol(item.symbol)}
                 />
-              </article>
+              </motion.article>
             );
           })}
         </div>
       ) : (
         <ul className="materials-grid">
-          {minerals.map((item) => {
+          {minerals.map((item, index) => {
             const isSelected = item.symbol === selectedSymbol;
             return (
-              <li key={item.symbol}>
+              <motion.li
+                key={item.symbol}
+                initial={reduceMotion ? false : { opacity: 0, scale: 0.96 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true, amount: 0.12 }}
+                transition={{ duration: 0.35, delay: Math.min(index * 0.025, 0.2) }}
+              >
                 <button
                   type="button"
                   className="material-grid-card"
@@ -202,7 +227,7 @@ export default function MineralsCatalog() {
                   />
                   <span className="material-grid-name">{item.name}</span>
                 </button>
-              </li>
+              </motion.li>
             );
           })}
         </ul>
@@ -246,8 +271,9 @@ function MineralDetail({ mineral, index }: { mineral: Mineral; index: number }) 
   const Icon = mineralIcons[mineral.symbol] ?? Atom;
 
   return (
-    <article className="material-detail" id="material-details" aria-labelledby="material-details-title" tabIndex={-1}>
+    <article className="material-detail material-detail-premium" id="material-details" aria-labelledby="material-details-title" tabIndex={-1}>
       <span className="eyebrow">Material details</span>
+      <MineralViewer3D mineral={mineral} fallbackTone={fallbackTones[mineral.symbol]} />
       <span className="row-index"> {String(index + 1).padStart(2, "0")} </span>
       <span className="row-symbol">{mineral.symbol}</span>
       <div className="row-name">
