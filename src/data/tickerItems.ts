@@ -1,0 +1,22 @@
+export const tickerItems = [
+  "Lithium \u2014 EV Batteries & Energy Storage",
+  "Cobalt \u2014 Clean Energy Transition",
+  "Rare Earth Elements \u2014 Defence & Electronics",
+  "Graphite \u2014 Semiconductor Manufacturing",
+  "Manganese \u2014 Steel & Alloys",
+  "Nickel \u2014 Aerospace & Batteries",
+  "Vanadium \u2014 Grid-Scale Storage",
+  "Titanium \u2014 Advanced Manufacturing",
+  "Silicon \u2014 Semiconductor Wafers & Solar",
+  "Gallium \u2014 GaN Chips & 5G RF Devices",
+  "Germanium \u2014 Fibre Optics & IR Detectors",
+  "Indium \u2014 ITO Displays & Solar Cells",
+  "Copper \u2014 Data Centre Busbars & PCBs",
+  "Tantalum \u2014 Capacitors & Medical Devices",
+  "Neodymium \u2014 NdFeB Permanent Magnets & EV Motors",
+  "Dysprosium \u2014 High-Temp Magnet Performance",
+  "Praseodymium \u2014 PrFeB Magnet Alloys & Pigments",
+  "Manganese Steel \u2014 Railway Tracks & Crossings",
+  "Chromium \u2014 Stainless Coach Panels & Bogies",
+  "Aluminium \u2014 Lightweight Rail Coach Structures"
+] as const;
