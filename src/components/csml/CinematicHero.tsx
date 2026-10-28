@@ -12,8 +12,7 @@ export default function CinematicHero() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start start", "end start"],
-    layoutEffect: false
+    offset: ["start start", "end start"]
   });
 
   const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "18%"]);

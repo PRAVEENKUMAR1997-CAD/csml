@@ -12,8 +12,7 @@ export default function ProcessingJourney() {
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    offset: ["start 0.75", "end 0.25"],
-    layoutEffect: false
+    offset: ["start 0.75", "end 0.25"]
   });
 
   const progressWidth = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
