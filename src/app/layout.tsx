@@ -9,14 +9,14 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://example.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "CSML | Critical & Strategy Minerals",
-    template: "%s | CSML"
+    default: "CSM | Critical & Strategy Minerals",
+    template: "%s | CSM"
   },
   description:
     "Critical & Strategy Minerals Private Limited — connecting critical materials with India's strategic industrial future.",
-  applicationName: "CSML",
+  applicationName: "CSM",
   openGraph: {
-    title: "CSML | Critical & Strategy Minerals",
+    title: "CSM | Critical & Strategy Minerals",
     description:
       "Critical materials for clean energy, advanced manufacturing and the digital economy.",
     type: "website"

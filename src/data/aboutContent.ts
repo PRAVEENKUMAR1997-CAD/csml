@@ -26,7 +26,7 @@ export const portfolioOverview = [
   { name: "Nickel", symbol: "Ni · Atomic No. 28", use: "NMC batteries, stainless steel" }
 ] as const;
 
-/** Demo narrative — verify milestones with CSML before publication. */
+/** Demo narrative — verify milestones with CSM before publication. */
 export const impactTimeline = [
   {
     year: "2022",

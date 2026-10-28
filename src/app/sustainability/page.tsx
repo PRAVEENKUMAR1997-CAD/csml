@@ -28,7 +28,7 @@ export default function SustainabilityPage() {
       </section>
       <section className="section-pad">
         <div className="container">
-          <SectionHeading eyebrow="A FRAMEWORK FOR RESPONSIBILITY" title="Responsibility should be measurable." description="These pillars provide a starting framework for sustainability content. They do not claim that specific policies, certifications, targets or performance results are already in place at CSML." />
+          <SectionHeading eyebrow="A FRAMEWORK FOR RESPONSIBILITY" title="Responsibility should be measurable." description="These pillars provide a starting framework for sustainability content. They do not claim that specific policies, certifications, targets or performance results are already in place at CSM." />
           <div className="esg-grid">
             {pillars.map((item) => {
               const Icon = item.icon;

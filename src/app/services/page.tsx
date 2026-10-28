@@ -16,7 +16,7 @@ export default function ServicesPage() {
           <span className="eyebrow">WHAT WE DO / 02</span>
           <h1>End-to-end mineral<br /><em>solutions.</em></h1>
           <p>From geological exploration and responsible extraction to processing, supply chain management, and strategic advisory.</p>
-          <div className="page-hero-foot"><span>CSML SERVICES</span><span>06 CAPABILITY AREAS</span></div>
+          <div className="page-hero-foot"><span>CSM SERVICES</span><span>06 CAPABILITY AREAS</span></div>
         </div>
       </section>
       <CsmlTheme>
@@ -30,7 +30,7 @@ export default function ServicesPage() {
             <h2>Discuss a requirement with our team.</h2>
           </div>
           <Link href="/contact" className="button button-primary">
-            Contact CSML <ArrowRight size={17} />
+            Contact CSM <ArrowRight size={17} />
           </Link>
         </div>
       </section>

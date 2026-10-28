@@ -16,7 +16,7 @@ export default function ContactPage() {
         <div className="container page-hero-inner">
           <span className="eyebrow">START A CONVERSATION / 05</span>
           <h1>Every partnership<br />starts with <em>a question.</em></h1>
-          <p>Share your material requirement, application or partnership idea. The CSML team can follow up with you.</p>
+          <p>Share your material requirement, application or partnership idea. The CSM team can follow up with you.</p>
           <div className="page-hero-foot"><span>BUSINESS ENQUIRIES</span><span>WE LOOK FORWARD TO HEARING FROM YOU</span></div>
         </div>
       </section>

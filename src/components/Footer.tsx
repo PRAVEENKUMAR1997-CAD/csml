@@ -8,9 +8,9 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-main">
         <div className="footer-intro">
-          <Link href="/" className="brand brand-light" aria-label="CSML home">
+          <Link href="/" className="brand brand-light" aria-label="CSM home">
             <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-            <span className="brand-copy"><strong>CSML</strong><small>CRITICAL MATERIALS</small></span>
+            <span className="brand-copy"><strong>CSM</strong><small>CRITICAL MATERIALS</small></span>
           </Link>
           <p>Securing India&apos;s strategic mineral future through responsible exploration, extraction, and supply chain excellence.</p>
           <Link href="/contact" className="footer-cta">Discuss a requirement <ArrowUpRight size={16} /></Link>
@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="container footer-bottom">
         <span>© {new Date().getFullYear()} Critical & Strategy Minerals Private Limited. CIN (demo): {DEMO_FOOTER_CIN}.</span>
-        <span title={DEMO_NOTE}>Demo placeholders may appear until CSML verifies official details.</span>
+        <span title={DEMO_NOTE}>Demo placeholders may appear until CSM verifies official details.</span>
       </div>
     </footer>
   );

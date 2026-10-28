@@ -5,7 +5,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { CsmlAboutSection, CsmlImpactSection, CsmlTheme } from "@/components/csml/CsmlSections";
 
 export const metadata: Metadata = {
-  title: "About CSML",
+  title: "About CSM",
   description: "Learn about Critical & Strategy Minerals Private Limited and its materials-led focus."
 };
 
@@ -16,8 +16,8 @@ export default function AboutPage() {
         <div className="container page-hero-inner">
           <span className="eyebrow">THE COMPANY / 01</span>
           <h1>A strategic view<br />of <em>critical materials.</em></h1>
-          <p>Critical & Strategy Minerals Private Limited (CSML) is focused on the materials that underpin national priorities, clean energy, advanced manufacturing and the digital economy.</p>
-          <div className="page-hero-foot"><span>ABOUT CSML</span><span>01 — 04</span></div>
+          <p>Critical & Strategy Minerals Private Limited (CSM) is focused on the materials that underpin national priorities, clean energy, advanced manufacturing and the digital economy.</p>
+          <div className="page-hero-foot"><span>ABOUT CSM</span><span>01 — 04</span></div>
         </div>
       </section>
       <CsmlTheme>
@@ -30,7 +30,7 @@ export default function AboutPage() {
           <div>
             <h2>Materials are more than commodities. They are <em>enablers of progress.</em></h2>
             <p>Our starting point is the connection between resource potential and real industrial needs. We aim to build a clear understanding of material applications, supply ecosystems and the changing priorities of the sectors that depend on them.</p>
-            <p>The company profile, active projects, partnerships and operational capabilities should be confirmed by CSML before this page is published as an official corporate statement.</p>
+            <p>The company profile, active projects, partnerships and operational capabilities should be confirmed by CSM before this page is published as an official corporate statement.</p>
           </div>
         </div>
       </section>
@@ -44,7 +44,7 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-      <section className="simple-cta"><div className="container simple-cta-inner"><div><span className="eyebrow">NEXT STEP</span><h2>Let&apos;s explore where our interests align.</h2></div><Link href="/contact" className="button button-primary">Contact CSML <ArrowRight size={17} /></Link></div></section>
+      <section className="simple-cta"><div className="container simple-cta-inner"><div><span className="eyebrow">NEXT STEP</span><h2>Let&apos;s explore where our interests align.</h2></div><Link href="/contact" className="button button-primary">Contact CSM <ArrowRight size={17} /></Link></div></section>
     </>
   );
 }

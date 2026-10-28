@@ -94,7 +94,7 @@ export function CsmlAboutSection() {
           <div className="section-label anim">Who We Are</div>
           <h2 className="section-title anim anim-d1">Built for India&apos;s <em>Strategic</em> Mineral Future</h2>
           <p className="anim anim-d2">
-            Critical & Strategy Minerals Private Limited (CSML) is dedicated to the exploration, development, and supply of minerals deemed critical for national security, clean energy, advanced manufacturing, and the digital economy.
+            Critical & Strategy Minerals Private Limited (CSM) is dedicated to the exploration, development, and supply of minerals deemed critical for national security, clean energy, advanced manufacturing, and the digital economy.
           </p>
           <p className="anim anim-d2">
             Aligned with the Government of India&apos;s National Critical Mineral Mission and KABIL&apos;s strategic objectives, we bridge the gap between mineral resource endowment and industrial demand.
@@ -124,7 +124,7 @@ export function CsmlAboutSection() {
               ))}
             </div>
             <p className="mc-csml-footer">
-              India imports a large share of its critical mineral requirements. CSML aims to strengthen domestic supply — operational scope to be confirmed by the company. <DemoFlag />
+              India imports a large share of its critical mineral requirements. CSM aims to strengthen domestic supply — operational scope to be confirmed by the company. <DemoFlag />
             </p>
           </div>
         </div>
@@ -426,7 +426,7 @@ export function CsmlRailwaySection() {
         </div>
         <div className="rail-bottom">
           <div>
-            <div className="rail-subhead anim">Key Railway Programmes — CSML Alignment</div>
+            <div className="rail-subhead anim">Key Railway Programmes — CSM Alignment</div>
             <div className="rail-programs anim anim-d1">
               {railwayPrograms.map((program) => (
                 <div className="rp-item" key={program.title}>
@@ -485,7 +485,7 @@ export function CsmlSustainabilitySection() {
   }, []);
 
   const pillars = [
-    { icon: "🌿", title: "Environmental", desc: "Zero-waste processing targets, mine reclamation plans, water recycling, and carbon-neutral operations by 2035 (aspirational — confirm with CSML)." },
+    { icon: "🌿", title: "Environmental", desc: "Zero-waste processing targets, mine reclamation plans, water recycling, and carbon-neutral operations by 2035 (aspirational — confirm with CSM)." },
     { icon: "👥", title: "Social", desc: "Community development, local employment priority, tribal land rights compliance, and inclusive growth initiatives." },
     { icon: "⚖", title: "Governance", desc: "Transparent operations, regulatory compliance, ethical sourcing, and full traceability from mine to market." },
     { icon: "🔬", title: "Innovation", desc: "R&D investment in green extraction technologies, bioleaching, and low-impact mineral processing methods." }

@@ -51,9 +51,9 @@ export async function POST(request: Request) {
       from,
       to,
       replyTo: data.email,
-      subject: `CSML website enquiry: ${safeText(data.interest)}`,
+      subject: `CSM website enquiry: ${safeText(data.interest)}`,
       text: [
-        "A new enquiry was submitted through the CSML website.",
+        "A new enquiry was submitted through the CSM website.",
         "",
         `Name: ${safeText(data.name)}`,
         `Email: ${data.email}`,

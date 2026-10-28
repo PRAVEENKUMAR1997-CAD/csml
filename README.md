@@ -1,4 +1,4 @@
-# CSML Corporate Website
+# CSM Corporate Website
 
 A production-oriented starter for the Critical & Strategy Minerals Private Limited website, built with Next.js App Router, TypeScript, responsive CSS, Zod validation and Resend for contact-form email delivery.
 
@@ -39,7 +39,7 @@ Set these values in `.env.local` for local development and in the deployment pro
 ```env
 RESEND_API_KEY=re_xxxxxxxxx
 CONTACT_TO_EMAIL=business-enquiries@your-company-domain.example
-CONTACT_FROM_EMAIL=CSML Website <website@your-verified-domain.example>
+CONTACT_FROM_EMAIL=CSM Website <website@your-verified-domain.example>
 NEXT_PUBLIC_SITE_URL=https://your-real-domain.example
 ```
 
@@ -64,7 +64,7 @@ This starter deliberately avoids inventing company facts. Please verify or repla
 6. Real images and image licensing/alt text.
 7. Domain, analytics/consent requirements, sitemap/robots and production deployment settings.
 
-The mineral and industrial application examples are general informational content, not a statement of CSML's actual inventory or supply commitments.
+The mineral and industrial application examples are general informational content, not a statement of CSM's actual inventory or supply commitments.
 
 ## Suggested next production hardening
 

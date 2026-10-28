@@ -42,13 +42,13 @@ export const railPrograms = [
     scheme: "Flagship Programme",
     title: "Vande Bharat Express (Train 18)",
     description:
-      "India's semi-high-speed fully stainless steel EMU. CSML supplies SS304 coils, copper conductors, NdFeB magnets, and silicon steel laminations for ICF Chennai and BEML Bangalore manufacturing lines."
+      "India's semi-high-speed fully stainless steel EMU. CSM supplies SS304 coils, copper conductors, NdFeB magnets, and silicon steel laminations for ICF Chennai and BEML Bangalore manufacturing lines."
   },
   {
     scheme: "Metro Rail Expansion",
     title: "National Metro Rail Policy — 27 Cities",
     description:
-      "India's metro boom requires aluminium carbody profiles, stainless steel fasteners, copper OHE wire, and lithium batteries across 27 cities. CSML provides certified material traceability from mine to metro."
+      "India's metro boom requires aluminium carbody profiles, stainless steel fasteners, copper OHE wire, and lithium batteries across 27 cities. CSM provides certified material traceability from mine to metro."
   },
   {
     scheme: "Dedicated Freight Corridor",
@@ -66,7 +66,7 @@ export const railPrograms = [
     scheme: "Make in India",
     title: "Rail Coach Factory (RCF) & ICF Modernisation",
     description:
-      "CSML supports India's coach production factories — ICF Chennai, RCF Kapurthala, MCF Raebareli, and BEML Bangalore — with domestic and certified-import critical material supply under MII procurement norms."
+      "CSM supports India's coach production factories — ICF Chennai, RCF Kapurthala, MCF Raebareli, and BEML Bangalore — with domestic and certified-import critical material supply under MII procurement norms."
   }
 ] as const;
 

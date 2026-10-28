@@ -91,6 +91,7 @@ export default function HomePage() {
             <SectionHeading eyebrow="02 — MATERIAL INTELLIGENCE" title="The elements behind progress." description="A look at materials relevant to the technologies and infrastructure transforming modern industry." />
             <Link href="/minerals" className="text-link desktop-link">Explore minerals <ArrowRight size={17} /></Link>
           </div>
+<<<<<<< Updated upstream
           <div className="mineral-grid">
             {mineralItems.map((item, index) => (
               <article className={`mineral-card ${item.tone}`} key={item.symbol}>
@@ -105,13 +106,18 @@ export default function HomePage() {
           </div>
           <div className="mobile-link-row"><Link href="/minerals" className="text-link">Explore minerals <ArrowRight size={17} /></Link></div>
           <p className="content-note">Illustrative mineral focus only. Availability, portfolio and supply capabilities must be confirmed with CSML before publication.</p>
+=======
+          <PremiumMineralGrid items={mineralItems} />
+          <MineralsSectionLink />
+          <p className="content-note">Illustrative mineral focus only. Availability, portfolio and supply capabilities must be confirmed with CSM before publication.</p>
+>>>>>>> Stashed changes
         </div>
       </section>
 
       <section className="dark-section section-pad">
         <div className="container">
           <div className="section-head-row">
-            <SectionHeading light eyebrow="03 — INDUSTRY CONNECTIONS" title="Where materials meet momentum." description="Critical minerals play a role across connected industries. Explore the application areas relevant to CSML's focus." />
+            <SectionHeading light eyebrow="03 — INDUSTRY CONNECTIONS" title="Where materials meet momentum." description="Critical minerals play a role across connected industries. Explore the application areas relevant to CSM's focus." />
             <Link href="/industries" className="text-link text-link-light desktop-link">View industries <ArrowRight size={17} /></Link>
           </div>
           <div className="sector-grid">
@@ -162,8 +168,18 @@ export default function HomePage() {
 
       <section className="sustain-strip">
         <div className="container sustain-strip-inner">
+<<<<<<< Updated upstream
           <div><span className="eyebrow">05 — RESPONSIBLE PROGRESS</span><h2>Progress matters.<br /><em>How we get there matters more.</em></h2></div>
           <div className="sustain-strip-side"><p>Explore the principles, priorities and evidence that should guide a responsible materials ecosystem.</p><Link href="/sustainability" className="button button-light">Sustainability at CSML <ArrowRight size={17} /></Link></div>
+=======
+          <Reveal>
+            <div><span className="eyebrow">05 — RESPONSIBLE PROGRESS</span><h2>Progress matters.<br /><em>How we get there matters more.</em></h2></div>
+          </Reveal>
+          <Reveal delay={0.08} className="sustain-strip-side">
+            <p>Explore the principles, priorities and evidence that should guide a responsible materials ecosystem.</p>
+            <Link href="/sustainability" className="button button-light">Sustainability at CSM <ArrowRight size={17} /></Link>
+          </Reveal>
+>>>>>>> Stashed changes
         </div>
       </section>
 

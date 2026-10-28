@@ -119,7 +119,7 @@ export default function MineralsCatalog() {
         <SectionHeading
           eyebrow="A MATERIALS LANDSCAPE"
           title="Small elements. System-level impact."
-          description="The following is an educational overview of selected minerals and common applications. It is not a representation of confirmed CSML inventory, sourcing rights or supply commitments."
+          description="The following is an educational overview of selected minerals and common applications. It is not a representation of confirmed CSM inventory, sourcing rights or supply commitments."
         />
         <div
           className="materials-view-switch"

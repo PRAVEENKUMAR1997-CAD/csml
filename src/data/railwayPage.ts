@@ -45,7 +45,7 @@ export const railwayPrograms = [
   { scheme: "Make in India", title: "Rail Coach Factory (RCF) & ICF Modernisation", description: "Coach production factories require domestic and certified-import critical material supply under MII procurement norms." }
 ] as const;
 
-/** Public-sector / industry outlook figures — not CSML operational metrics. */
+/** Public-sector / industry outlook figures — not CSM operational metrics. */
 export const railwayOutlookStats = [
   { value: "5,000+", label: "Vande Bharat coaches ordered by 2026 (industry outlook)" },
   { value: "₹2.4LCr", label: "Indian Railways capital expenditure FY25 (public budget context)" },

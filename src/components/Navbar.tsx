@@ -19,9 +19,9 @@ export default function Navbar() {
         </div>
       </div>
       <div className="container nav-row">
-        <Link href="/" className="brand" aria-label="CSML home" onClick={() => setOpen(false)}>
+        <Link href="/" className="brand" aria-label="CSM home" onClick={() => setOpen(false)}>
           <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
-          <span className="brand-copy"><strong>CSML</strong><small>CRITICAL MATERIALS</small></span>
+          <span className="brand-copy"><strong>CSM</strong><small>CRITICAL MATERIALS</small></span>
         </Link>
 
         <nav className={`site-nav ${open ? "is-open" : ""}`} aria-label="Main navigation">

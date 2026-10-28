@@ -1,6 +1,6 @@
-/** Clearly marked demo copy — not verified CSML facts. Replace before official publication. */
+/** Clearly marked demo copy — not verified CSM facts. Replace before official publication. */
 export const DEMO_NOTE =
-  "Demo placeholder — illustrative only. Confirm with CSML before treating as company fact.";
+  "Demo placeholder — illustrative only. Confirm with CSM before treating as company fact.";
 
 export const DEMO_CONTACT = {
   office: "New Delhi, India — 110001",
