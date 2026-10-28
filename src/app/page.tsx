@@ -10,6 +10,8 @@ import {
   CsmlTheme,
   CsmlTicker
 } from "@/components/csml/CsmlSections";
+import { MineralsSectionLink, PremiumMineralGrid } from "@/components/csml/HomePremiumSections";
+import { Reveal } from "@/components/csml/motion";
 
 const mineralItems = [
   { symbol: "Nd", name: "Neodymium", use: "Permanent magnets & EV motors", tone: "mineral-green" },
@@ -41,7 +43,7 @@ export default function HomePage() {
             <p className="hero-description">Connecting critical and strategic minerals with the industries building a more resilient, electrified and advanced future.</p>
             <div className="hero-actions">
               <Link href="/minerals" className="button button-primary">Explore our focus <ArrowUpRight size={17} /></Link>
-              <Link href="/about" className="text-link">Discover CSML <ArrowRight size={17} /></Link>
+              <Link href="/about" className="text-link">Discover CSM <ArrowRight size={17} /></Link>
             </div>
             <div className="hero-caption"><span className="caption-line" /> INDIA-FOCUSED. INDUSTRY-LED. FUTURE-READY.</div>
           </div>
@@ -73,13 +75,13 @@ export default function HomePage() {
         <div className="container intro-grid">
           <div className="intro-side">
             <span className="eyebrow">01 — WHO WE ARE</span>
-            <div className="intro-index">CS<span>/</span>ML</div>
+            <div className="intro-index">CSM</div>
           </div>
           <div className="intro-main">
             <h2>Building a more resilient future starts <em>beneath the surface.</em></h2>
             <div className="intro-bottom">
-              <p>Critical & Strategy Minerals Private Limited (CSML) focuses on the minerals and material ecosystems that support national priorities, clean energy, advanced manufacturing and the digital economy.</p>
-              <Link href="/about" className="round-link" aria-label="Read about CSML"><ArrowUpRight size={20} /></Link>
+              <p>Critical & Strategy Minerals Private Limited (CSM) focuses on the minerals and material ecosystems that support national priorities, clean energy, advanced manufacturing and the digital economy.</p>
+              <Link href="/about" className="round-link" aria-label="Read about CSM"><ArrowUpRight size={20} /></Link>
             </div>
           </div>
         </div>
@@ -91,26 +93,9 @@ export default function HomePage() {
             <SectionHeading eyebrow="02 — MATERIAL INTELLIGENCE" title="The elements behind progress." description="A look at materials relevant to the technologies and infrastructure transforming modern industry." />
             <Link href="/minerals" className="text-link desktop-link">Explore minerals <ArrowRight size={17} /></Link>
           </div>
-<<<<<<< Updated upstream
-          <div className="mineral-grid">
-            {mineralItems.map((item, index) => (
-              <article className={`mineral-card ${item.tone}`} key={item.symbol}>
-                <div className="mineral-card-top"><span>0{index + 1}</span><span className="mineral-dot" /></div>
-                <div className="element-symbol">{item.symbol}</div>
-                <div className="element-rule" />
-                <h3>{item.name}</h3>
-                <p>{item.use}</p>
-                <span className="element-watermark">{item.symbol}</span>
-              </article>
-            ))}
-          </div>
-          <div className="mobile-link-row"><Link href="/minerals" className="text-link">Explore minerals <ArrowRight size={17} /></Link></div>
-          <p className="content-note">Illustrative mineral focus only. Availability, portfolio and supply capabilities must be confirmed with CSML before publication.</p>
-=======
           <PremiumMineralGrid items={mineralItems} />
           <MineralsSectionLink />
           <p className="content-note">Illustrative mineral focus only. Availability, portfolio and supply capabilities must be confirmed with CSM before publication.</p>
->>>>>>> Stashed changes
         </div>
       </section>
 
@@ -145,7 +130,7 @@ export default function HomePage() {
               <span className="visual-label visual-label-a">RESOURCE</span>
               <span className="visual-label visual-label-b">INDUSTRY</span>
               <span className="visual-label visual-label-c">FUTURE</span>
-              <div className="visual-index">CSML / 03</div>
+              <div className="visual-index">CSM / 03</div>
             </div>
           </div>
           <div className="approach-copy">
@@ -168,10 +153,6 @@ export default function HomePage() {
 
       <section className="sustain-strip">
         <div className="container sustain-strip-inner">
-<<<<<<< Updated upstream
-          <div><span className="eyebrow">05 — RESPONSIBLE PROGRESS</span><h2>Progress matters.<br /><em>How we get there matters more.</em></h2></div>
-          <div className="sustain-strip-side"><p>Explore the principles, priorities and evidence that should guide a responsible materials ecosystem.</p><Link href="/sustainability" className="button button-light">Sustainability at CSML <ArrowRight size={17} /></Link></div>
-=======
           <Reveal>
             <div><span className="eyebrow">05 — RESPONSIBLE PROGRESS</span><h2>Progress matters.<br /><em>How we get there matters more.</em></h2></div>
           </Reveal>
@@ -179,7 +160,6 @@ export default function HomePage() {
             <p>Explore the principles, priorities and evidence that should guide a responsible materials ecosystem.</p>
             <Link href="/sustainability" className="button button-light">Sustainability at CSM <ArrowRight size={17} /></Link>
           </Reveal>
->>>>>>> Stashed changes
         </div>
       </section>
 
